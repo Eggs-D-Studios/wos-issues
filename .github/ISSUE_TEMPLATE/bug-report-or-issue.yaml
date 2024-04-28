@@ -1,0 +1,73 @@
+name: Bug report or issue
+description: I found a bug in the game and I want to report it.
+labels: bug, unreviewed
+assignees: Hexcede
+body:
+  - type: markdown
+    id: info
+    attributes:
+      value: |
+        ## What makes a good bug report?
+        If someone already reported your bug and you have concerns, you can always reply under the other bug instead of creating a new bug.
+
+        1. You should try to figure out how to make it happen so that we can figure out how to fix it. It's okay if you can't, some bugs don't happen consistently.
+        2. Your bug report shouldn't be a suggestion. "Fix Thruster being bad" is not a valid bug report because you're asking to change something, not fix a bug.
+
+        It's important to keep in mind that some bugs may be fixed in development builds. It might take some time for a fix to get into the game.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Guidelines
+      description: Before submitting your report, make sure your bug report satisfies these guidelines
+      options:
+        - label: I checked for duplicate bug reports
+          required: true
+        - label: I tried to find a way to reproduce the bug
+          required: true
+  - type: markdown
+    id: info
+    attributes:
+      value: |
+        ---
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: Which game version(s) does this bug happen in?
+      multiple: true
+      options:
+        - Main (Stable)
+        - Development (Unstable)
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened? What did you expect to happen?
+      description: Be as detailed as possible
+      placeholder: Tell us what you see!
+      value: "My ship seemingly gets randomly duplicated or deleted when I warp sometimes. I can't seem to make it happen consistently, I have only encountered it a few times by warping.\n\nI can't get `Filter` to work with `Kiln`. It can't find `Sand` through a `Filter` even when it has been specifically configured for `Sand`. I expect the `Kiln` to be able to find `Sand` through the filter but for some reason it doesn't."
+    validations:
+      required: true
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: How can we reproduce this bug?
+      description: How can we try to make this bug happen on purpose?
+      placeholder: Reproduction steps
+      value: " 1. Warp to space.\n 2. Warp back to the planet.\n 3. Warp to space again and repeat until something happens.\n 4. Sometimes, your ship will disappear or be duplicated.\n\n 1. Set up a `Filter` for `Sand` that's attached to a `Kiln` and a `Sand` bin.\n 2. Turn on the `Kiln` and observe that it can't find the `Sand`."
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      description: How often does the bug occur when you follow the steps?
+      multiple: false
+      options:
+        - Always
+        - Most of the time
+        - Only sometimes
+        - I can't make it happen consistently
+      default: 0
+    validations:
+      required: true

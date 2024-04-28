@@ -1,0 +1,69 @@
+name: Feature or suggestion
+description: I want to suggest a feature or change.
+labels: enhancement, unreviewed
+assignees: Hexcede
+body:
+  - type: markdown
+    id: info
+    attributes:
+      value: |
+        ## What makes a good suggestion?
+        1. Your suggestion shouldn't be a bug report. "Make Filter work" is not a valid suggestion because you're asking to fix something broken.
+        2. Your suggestion should be constructive. "Remove ImpulseCannon" or "Make Thruster better" are not good suggestions on their own without a replacement or improvement and good justification.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Guidelines
+      description: |
+        Before submitting your suggestion, make sure your suggestion satisfies these guidelines
+      options:
+        - label: I checked for duplicate suggestions
+          required: true
+        - label: My suggestion intends to add or improve something
+          required: true
+  - type: markdown
+    id: info
+    attributes:
+      value: |
+        ---
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: My suggestion applies to features in...
+      multiple: false
+      options:
+        - Main (Stable)
+        - Development (Unstable)
+      default: 1
+    validations:
+      required: true
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      description: What is your suggestion about?
+      multiple: false
+      options:
+        - A game mechanic (e.g. a part, a feature, etc)
+        - A design problem (e.g. clunky UX, a balancing issue, etc)
+        - A programming feature (e.g. APIs, tweaks, changes, etc)
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: justification
+    attributes:
+      label: Why are you making your suggestion?
+      description: What do you think makes your feature or change a good idea? What will it do for the game?
+      placeholder: My feature or change is a good idea because it...
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What do you propose? What should change, or what should be added?
+      description: Don't worry about specific details, stats, etc, those are for us to figure out
+      placeholder: Suggest something new and shiny
+    validations:
+      required: true
