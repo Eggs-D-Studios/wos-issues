@@ -36,8 +36,8 @@ body:
       description: Which game version(s) does this bug happen in?
       multiple: true
       options:
-        - Main (Stable)
-        - Development (Unstable)
+        - Main (Production)
+        - Development (Staging)
       default: 0
     validations:
       required: true
