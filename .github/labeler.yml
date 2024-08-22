@@ -1,5 +1,5 @@
 production:
-    - 'Main \(Production\)'
+    - 'Main \((Production|Stable)\)'
 
 staging:
-    - 'Development \(Staging\)'
+    - 'Development \((Staging|Unstable)\)'
