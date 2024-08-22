@@ -1,5 +1,5 @@
-stable:
-    - 'Main \(Stable\)'
+production:
+    - 'Main \(Production\)'
 
-unstable:
-    - 'Development \(Unstable\)'
+staging:
+    - 'Development \(Staging\)'
