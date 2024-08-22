@@ -33,8 +33,8 @@ body:
       description: My suggestion applies to features in...
       multiple: false
       options:
-        - Main (Stable)
-        - Development (Unstable)
+        - Main (Production)
+        - Development (Staging)
       default: 1
     validations:
       required: true
