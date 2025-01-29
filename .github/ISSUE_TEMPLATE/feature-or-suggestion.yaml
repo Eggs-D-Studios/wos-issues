@@ -10,6 +10,7 @@ body:
         ## What makes a good suggestion?
         1. Your suggestion shouldn't be a bug report. "Make Filter work" is not a valid suggestion because you're asking to fix something broken.
         2. Your suggestion should be constructive. "Remove ImpulseCannon" or "Make Thruster better" are not good suggestions on their own without a replacement or improvement and good justification.
+        3. When marking the version, please use Staging for suggestions which only apply to content exclusive to Staging.
   - type: checkboxes
     id: terms
     attributes:
