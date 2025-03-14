@@ -36,7 +36,7 @@ body:
       options:
         - Main (Production)
         - Development (Staging)
-      default: 1
+      default: 0
     validations:
       required: true
   - type: dropdown
