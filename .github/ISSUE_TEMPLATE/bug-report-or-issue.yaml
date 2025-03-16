@@ -1,7 +1,8 @@
 name: Bug report or issue
 description: Something isn't working as intended.
-labels: bug, unreviewed
+labels: unreviewed
 assignees: Hexcede
+type: Bug
 body:
   - type: markdown
     id: info

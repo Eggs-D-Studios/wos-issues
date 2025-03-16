@@ -1,7 +1,8 @@
 name: Feature or suggestion
 description: I want to suggest a feature or change.
-labels: enhancement, unreviewed
+labels: unreviewed
 assignees: Hexcede
+type: Feature
 body:
   - type: markdown
     id: info
