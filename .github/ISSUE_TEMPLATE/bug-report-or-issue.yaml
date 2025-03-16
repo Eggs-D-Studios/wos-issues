@@ -1,5 +1,5 @@
 name: Bug report or issue
-description: I found a bug in the game and I want to report it.
+description: Something isn't working as intended.
 labels: bug, unreviewed
 assignees: Hexcede
 body:
@@ -7,22 +7,23 @@ body:
     id: info
     attributes:
       value: |
+        If you lost progress or have a more sensitive issue you should create a ticket in our Discord server!
+
         ## What makes a good bug report?
-        If someone already reported your bug and you have concerns, you can always reply under the other bug instead of creating a new bug.
-
-        1. You should try to figure out how to make it happen so that we can figure out how to fix it. It's okay if you can't, some bugs don't happen consistently.
-        2. Your bug report shouldn't be a suggestion. "Fix Thruster being bad" is not a valid bug report because you're asking to change something, not fix a bug.
-
-        It's important to keep in mind that some bugs may be fixed in development builds. It might take some time for a fix to get into the game.
+        - Explain how to reproduce the bug as best you can
+        - Be as specific and detailed as possible
+        - Provide screenshots, videos, or explanations of what happens if possible
   - type: checkboxes
     id: terms
     attributes:
-      label: Guidelines
-      description: Before submitting your report, make sure your bug report satisfies these guidelines
+      label: Checklist
+      description: Before submitting your report, make sure you do the checklist
       options:
-        - label: I checked for duplicate bug reports
+        - label: Do a quick check for similar/duplicate reports to reply under instead
           required: true
-        - label: I tried to find a way to reproduce the bug
+        - label: Give a detailed description of what's wrong
+          required: true
+        - label: Provide detailed reproduction steps for the bug (if applicable)
           required: true
   - type: markdown
     id: info
@@ -41,15 +42,15 @@ body:
   - type: textarea
     id: how-to-reproduce
     attributes:
-      label: How can we reproduce this bug?
-      description: How can we try to make this bug happen on purpose?
+      label: How can we try to trigger the bug again?
+      description: This is important so that we can reproduce the bug in a debug environment
       placeholder: Reproduction steps
       value: " 1. Warp to space.\n 2. Warp back to the planet.\n 3. Warp to space again and repeat until something happens.\n 4. Sometimes, your ship will disappear or be duplicated.\n\n 1. Set up a `Filter` for `Sand` that's attached to a `Kiln` and a `Sand` bin.\n 2. Turn on the `Kiln` and observe that it can't find the `Sand`."
   - type: dropdown
     id: frequency
     attributes:
-      label: Frequency
-      description: How often does the bug occur when you follow the steps?
+      label: Repeatability
+      description: How repeatable is the bug? Can you make it always happen, or, does it only happen sometimes?
       multiple: false
       options:
         - Always
