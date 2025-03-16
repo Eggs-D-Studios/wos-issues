@@ -53,9 +53,9 @@ body:
       multiple: false
       options:
         - Always
-        - Most of the time
-        - Only sometimes
-        - I can't make it happen consistently
+        - Sometimes
+        - Rarely
+        - Can't tell
       default: 0
     validations:
       required: true
