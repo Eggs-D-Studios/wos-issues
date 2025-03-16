@@ -7,20 +7,21 @@ body:
     id: info
     attributes:
       value: |
-        ## What makes a good suggestion?
-        1. Your suggestion shouldn't be a bug report. "Make Filter work" is not a valid suggestion because you're asking to fix something broken.
-        2. Your suggestion should be constructive. "Remove ImpulseCannon" or "Make Thruster better" are not good suggestions on their own without a replacement or improvement and good justification.
-        3. When marking the version, please use Staging for suggestions which only apply to content exclusive to Staging.
+        - Focus on problems rather than the solution you have in mind
+        - Describe what improvements you think should be made
+        - Avoid going into specific stats when you don't have to
   - type: checkboxes
     id: terms
     attributes:
-      label: Guidelines
+      label: Checklist
       description: |
-        Before submitting your suggestion, make sure your suggestion satisfies these guidelines
+        Before submitting your suggestion, make sure you do the checklist
       options:
-        - label: I checked for duplicate suggestions
+        - label: Do a quick check for similar/duplicate suggestions to reply under instead
           required: true
-        - label: My suggestion intends to add or improve something
+        - label: Make sure your suggestion focuses on a problem, even if its broad
+          required: true
+        - label: Have a good explanation for how the problem you're trying to solve is important
           required: true
   - type: markdown
     id: info
@@ -31,11 +32,12 @@ body:
     id: topic
     attributes:
       label: Topic
-      description: What is your suggestion about?
+      description: What does your suggestion focus on?
       multiple: false
       options:
         - A game mechanic (e.g. a part, a feature, etc)
         - A design problem (e.g. clunky UX, a balancing issue, etc)
+        - A documentation issue (e.g. incorrect description, missing information, etc)
         - A programming feature (e.g. APIs, tweaks, changes, etc)
       default: 0
     validations:
