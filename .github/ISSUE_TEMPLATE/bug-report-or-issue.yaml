@@ -29,18 +29,6 @@ body:
     attributes:
       value: |
         ---
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: Which game version(s) does this bug happen in?
-      multiple: true
-      options:
-        - Main (Production)
-        - Development (Staging)
-      default: 0
-    validations:
-      required: true
   - type: textarea
     id: what-happened
     attributes:

@@ -28,18 +28,6 @@ body:
       value: |
         ---
   - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: My suggestion applies to features in...
-      multiple: false
-      options:
-        - Main (Production)
-        - Development (Staging)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
     id: topic
     attributes:
       label: Topic
