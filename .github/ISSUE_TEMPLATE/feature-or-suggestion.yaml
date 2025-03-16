@@ -7,8 +7,8 @@ body:
     id: info
     attributes:
       value: |
-        - Focus on problems rather than the solution you have in mind
-        - Describe what improvements you think should be made
+        - Focus on problems you want to resolve, rather than particular solutions you have in mind
+        - Try to describe what you think needs to be improved, how, why, etc
         - Avoid going into specific stats when you don't have to
   - type: checkboxes
     id: terms
@@ -19,7 +19,7 @@ body:
       options:
         - label: Do a quick check for similar/duplicate suggestions to reply under instead
           required: true
-        - label: Make sure your suggestion focuses on a problem, even if its broad
+        - label: Make sure your suggestion primarily focuses on making improvements
           required: true
         - label: Have a good explanation for how the problem you're trying to solve is important
           required: true
@@ -43,18 +43,22 @@ body:
     validations:
       required: true
   - type: textarea
-    id: suggestion
+    id: problem
     attributes:
-      label: What do you propose? What should change, or what should be added?
-      description: Don't worry about specific details, stats, etc, those are for us to figure out
-      placeholder: Suggest something new and shiny
+      label: What problem are you focusing on, or what are you looking to improve?
+      description: Describe the problem. It can be simple, broad, or vague, but be as specific as possible
+      placeholder: What are you looking to improve?
     validations:
       required: true
   - type: textarea
+    id: suggestion
+    attributes:
+      label: What do you have in mind, if anything?
+      description: Describe how you think the problem should be solved. Don't worry about specific details, stats, etc
+      placeholder: Suggest something new and shiny
+  - type: textarea
     id: justification
     attributes:
-      label: Why are you making your suggestion?
-      description: What do you think makes your feature or change a good idea? What will it do for the game?
+      label: Why is your proposal a good idea, if you had one?
+      description: How will your proposal solve the problem you posed or make an improvement?
       placeholder: My feature or change is a good idea because it...
-    validations:
-      required: true
