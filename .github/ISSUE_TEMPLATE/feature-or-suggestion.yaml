@@ -43,18 +43,18 @@ body:
     validations:
       required: true
   - type: textarea
-    id: justification
-    attributes:
-      label: Why are you making your suggestion?
-      description: What do you think makes your feature or change a good idea? What will it do for the game?
-      placeholder: My feature or change is a good idea because it...
-    validations:
-      required: true
-  - type: textarea
     id: suggestion
     attributes:
       label: What do you propose? What should change, or what should be added?
       description: Don't worry about specific details, stats, etc, those are for us to figure out
       placeholder: Suggest something new and shiny
+    validations:
+      required: true
+  - type: textarea
+    id: justification
+    attributes:
+      label: Why are you making your suggestion?
+      description: What do you think makes your feature or change a good idea? What will it do for the game?
+      placeholder: My feature or change is a good idea because it...
     validations:
       required: true
