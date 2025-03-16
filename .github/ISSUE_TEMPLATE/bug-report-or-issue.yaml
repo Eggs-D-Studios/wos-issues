@@ -60,3 +60,10 @@ body:
       default: 0
     validations:
       required: true
+  - type: textarea
+    id: model-code
+    attributes:
+      label: Do you have a model that reproduces the bug?
+      description: Paste model code below if applicable
+      placeholder: Reproduction model
+      render: json
