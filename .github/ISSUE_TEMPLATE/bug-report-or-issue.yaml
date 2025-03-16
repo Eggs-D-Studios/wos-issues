@@ -9,7 +9,6 @@ body:
       value: |
         If you lost progress or have a more sensitive issue you should create a ticket in our Discord server!
 
-        ## What makes a good bug report?
         - Explain how to reproduce the bug as best you can
         - Be as specific and detailed as possible
         - Provide screenshots, videos, or explanations of what happens if possible
