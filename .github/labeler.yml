@@ -3,3 +3,15 @@ production:
 
 staging:
     - 'Development \((Staging|Unstable)\)'
+
+rarely repeatable:
+    - 'Rarely'
+
+sometimes repeatable:
+    - 'Sometimes'
+
+always repeatable:
+    - 'Always'
+
+unknown repeatability:
+    - 'Can\'t tell'
