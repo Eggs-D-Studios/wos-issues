@@ -5,13 +5,13 @@ staging:
     - 'Development \((Staging|Unstable)\)'
 
 rarely repeatable:
-    - 'Rarely'
+    - 'Repeatability\nRarely'
 
 sometimes repeatable:
-    - 'Sometimes'
+    - 'Repeatability\nSometimes'
 
 always repeatable:
-    - 'Always'
+    - 'Repeatability\nAlways'
 
 unknown repeatability:
-    - 'Can\'t tell'
+    - 'Repeatability\nCan\'t tell'
