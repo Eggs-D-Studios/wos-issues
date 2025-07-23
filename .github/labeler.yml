@@ -14,4 +14,4 @@ always repeatable:
     - 'Repeatability\nAlways'
 
 unknown repeatability:
-    - 'Repeatability\nCan\'t tell'
+    - 'Repeatability\nCan''t tell'
